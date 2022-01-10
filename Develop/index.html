@@ -27,8 +27,26 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <script>
+        const d = new Date();
+        document.getElementById("currentDay").innerHTML = d;
+        </script>
     </header>
-    <div class="container">
+    <div class="time-block">
+        <!-- Each span 1 of 12 columns, or 1/12 of the row -->
+        <div id= "row" class="row-1">8am</div>
+        <div id= "row" class="row-1">9am</div>
+        <div class="row-1">10am</div>
+        <div class="row-1">11am</div>
+        <div class="row-1">12pm</div>
+        <div class="row-1">1pm</div>
+        <div class="row-1">2pm</div>
+        <div class="row-1">3pm</div>
+        <div class="row-1">4pm</div>
+        <div class="row-1">5pm</div>
+        <div class="row-1">6pm</div>
+        <div class="row-1">7pm</div>
+      </div>
       <!-- Timeblocks go here -->
     </div>
 
